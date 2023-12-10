@@ -18,7 +18,9 @@
     "url": "https://github.com/LMSerhii/SimplyChocolate/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "modern-normalize": "^1.1.0",
+    "sass": "^1.69.5",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
