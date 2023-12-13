@@ -1,38 +1,39 @@
 .header {
-}
+  &__nav {
+    &__logo {
+      &__link {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.11; // 1,11
+        letter-spacing: -0.54px;
 
-.container {
-}
-.nav {
-}
-.logo__container {
-}
-.logo {
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.11; // 1,11
-  letter-spacing: -0.54px;
-}
-.logo-accent {
-  font-style: italic;
-}
-.logo__icon {
-}
-.nav__list {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: -0.28px;
-}
-.nav__item {
-}
-.nav__link {
-}
-.social__list {
-}
-.social__item {
-}
-.social__link {
-}
-.social__icon {
+        .logo-accent {
+          font-style: italic;
+        }
+      }
+
+      &__icon {
+      }
+    }
+    &__list {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.14;
+      letter-spacing: -0.28px;
+    }
+    &__item {
+    }
+    &__link {
+    }
+  }
+  &__social {
+    &__list {
+    }
+    &__item {
+    }
+    &__link {
+    }
+    &__icon {
+    }
+  }
 }

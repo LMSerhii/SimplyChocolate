@@ -1,21 +1,19 @@
 .hero {
-}
+  &__info {
+    &__title {
+      color: #fff;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 1.21;
+      letter-spacing: -0.84px;
+    }
 
-.hero__info {
-}
-
-.hero__info_title {
-  color: #fff;
-  font-size: 28px;
-  font-weight: 500;
-  line-height: 1.21;
-  letter-spacing: -0.84px;
-}
-
-.hero__info_btns {
-  .btn {
-    color: #fff;
-    font-weight: 600;
+    &__btns {
+      .btn {
+        color: #fff;
+        font-weight: 600;
+      }
+    }
   }
 }
 
@@ -24,7 +22,6 @@
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.42px;
-}
-
-.scroll__icon {
+  .scroll__icon {
+  }
 }
