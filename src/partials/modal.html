@@ -1,0 +1,61 @@
+<div class="backdrop" hidden>
+  <div class="modal">
+    <button class="close">☠️</button>
+
+    <strong class="modal__title">
+      LEAVE A REVIEW ABOUT <span class="titile__accent">OUR CHOCOLATE</span>
+    </strong>
+
+    <form class="modal__form" name="review__form">
+      <label class="modal__form__label" for="user_name">Name</label>
+      <input
+        class="modal__form__input"
+        type="text"
+        name="name"
+        id="user_name"
+        placeholder=" "
+        required
+        minlength="3"
+      />
+
+      <label class="modal__form__label" for="user_email">Email</label>
+      <input
+        class="modal__form__input"
+        type="email"
+        name="email"
+        id="user_email"
+        placeholder=" "
+        required
+      />
+
+      <label class="modal__form__label" for="user_phone">Phone number</label>
+      <input
+        class="modal__form__input"
+        type="tel"
+        name="phone"
+        id="user_phone"
+        placeholder=" "
+        minlength="12"
+        maxlength="12"
+        required
+      />
+
+      <label class="modal__form__label" for="user_commet">Comment</label>
+      <textarea
+        class="modal__form__comment"
+        name="text"
+        id="user_commet"
+        rows="5"
+        placeholder=" "
+        minlength="5"
+      ></textarea>
+
+      <label class="modal-form-agreement">
+        <input type="checkbox" name="user_agreement" value="yes" />
+        I accept the terms and conditions of the Privacy Policy
+      </label>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</div>
