@@ -1,28 +1,17 @@
 .sellers {
   &__title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.16;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
   }
-  .title__accent {
-    color: #fd9222;
-  }
+
   &__list {
   }
   &__item {
+    &_img {
+    }
+    &_title {
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
   }
   &__link {
-  }
-  &__item_img {
-  }
-  &__item_title {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.33;
-    letter-spacing: -0.36px;
-    text-transform: uppercase;
   }
 }

@@ -4,8 +4,8 @@
       &__link {
         font-size: 18px;
         font-weight: 700;
-        line-height: 1.11; // 1,11
-        letter-spacing: -0.54px;
+        line-height: 1.11;
+        letter-spacing: -0.03em;
 
         .logo-accent {
           font-style: italic;
@@ -16,10 +16,9 @@
       }
     }
     &__list {
-      font-size: 14px;
       font-weight: 500;
       line-height: 1.14;
-      letter-spacing: -0.28px;
+      letter-spacing: -0.02em;
     }
     &__item {
     }

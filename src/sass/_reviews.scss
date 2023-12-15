@@ -1,40 +1,25 @@
 .reviews {
   &__title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.16;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-  }
-
-  &__accent {
-    color: #fd9222;
   }
 
   &__list {
+    &__thumb {
+    }
   }
   &__item {
-  }
-  &__list__thumb {
-  }
-  &__item_img {
-  }
-  &__item_title {
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.33;
-  }
-  &__item_text {
-    color: rgba(17, 17, 17, 0.7);
-    text-align: center;
-    line-height: 1.28;
-    letter-spacing: -0.28px;
-  }
+    &_img {
+    }
+    &_title {
+      text-align: center;
+    }
+    &_text {
+      color: rgba(17, 17, 17, 0.7);
+      text-align: center;
+    }
 
-  &__btn {
-    font-size: 18px;
-    font-weight: 600;
+    &__btn {
+      font-size: 18px;
+      font-weight: 600;
+    }
   }
 }
