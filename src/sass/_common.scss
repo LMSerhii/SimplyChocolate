@@ -1,13 +1,23 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 @import './reset';
 
+$dark: #111111;
+$violet: #1e1823;
+$grey: #4c4c4c;
+$orange: #fd9222;
+$beige: #fcf1e0;
+$light: #fafafa;
+$white: #ffffff;
+$white-clear: rgba(255, 255, 255, 0.7);
+$dark-clear: rgba(17, 17, 17, 0.7);
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: normal;
-  color: #111;
+  color: $dark;
 }
 
 .container {
@@ -18,7 +28,7 @@ body {
 }
 
 .title__accent {
-  color: #fd9222;
+  color: $orange;
 }
 
 .section__title {
