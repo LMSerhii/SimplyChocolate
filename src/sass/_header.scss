@@ -1,23 +1,37 @@
 .header {
   &__container {
-    display: flex;
-    align-items: center;
-    gap: 90px;
   }
+
+  @media screen and (min-width: 1200px) {
+    &__container {
+      display: flex;
+      align-items: center;
+      gap: 90px;
+    }
+  }
+
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 14px;
 
     &__logo {
       display: flex;
       align-items: center;
       gap: 4px;
+
       &__link {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 700;
-        line-height: 1.11;
+        line-height: 1.28;
         letter-spacing: -0.03em;
+
+        @media screen and (min-width: 1200px) {
+          font-size: 18px;
+          line-height: 1.11;
+        }
 
         .logo-accent {
           font-style: italic;
@@ -27,43 +41,81 @@
       &__icon {
         stroke: $orange;
         fill: transparent;
-        width: 24px;
-        height: 24px;
+        width: 21px;
+        height: 21px;
+
+        @media screen and (min-width: 1200px) {
+          width: 24px;
+          height: 24px;
+        }
       }
     }
     &__list {
-      font-weight: 500;
-      line-height: 1.14;
-      letter-spacing: -0.02em;
+      display: none;
+    }
+
+    .modal-menu-btn {
+      border: none;
+      background-color: transparent;
       display: flex;
       align-items: center;
-      gap: 24px;
+      justify-content: center;
     }
+    .modal-menu-icon {
+      stroke: $dark;
+      width: 28px;
+      height: 28px;
+    }
+
+    @media screen and (min-width: 768px) {
+      .modal-menu-btn {
+        display: none;
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &__list {
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: -0.02em;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+    }
+
     &__item {
     }
     &__link {
     }
   }
+
   &__social {
     &__list {
-      display: flex;
-      align-items: center;
-      gap: 14px;
+      display: none;
     }
-    &__item {
-    }
-    &__link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      border: 1px solid rgba(17, 17, 17, 0.1);
-    }
-    &__icon {
-      width: 24px;
-      height: 24px;
+
+    @media screen and (min-width: 1200px) {
+      &__list {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      &__item {
+      }
+      &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid rgba(17, 17, 17, 0.1);
+      }
+      &__icon {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }

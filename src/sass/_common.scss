@@ -18,13 +18,33 @@ body {
   font-style: normal;
   line-height: normal;
   color: $dark;
+  background-color: $light;
 }
 
 .container {
-  max-width: 1200px;
-  min-width: 300px;
-  padding: 0 32px;
-  margin: 0 auto;
+  max-width: 320px;
+  min-width: 260px;
+  padding: 0 20px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+    min-width: 300px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    min-width: 300px;
+    padding: 0 32px;
+    margin: 0 auto;
+  }
 }
 
 .title__accent {
