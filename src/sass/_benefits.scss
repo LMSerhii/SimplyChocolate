@@ -1,15 +1,33 @@
 .benefits {
   background-color: $violet;
+  padding: 20px 0;
 
   &__list {
   }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
   &__item {
+    &_thumb {
+      width: 62px;
+      height: 62px;
+      border-radius: 365px;
+      border: 1px solid rgba(255, 255, 255, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+    }
     &_icon {
+      fill: #fd9222;
     }
     &_title {
       color: $white;
       font-size: 18px;
       font-weight: 600;
+      margin-bottom: 18px;
     }
     &_text {
       color: $white-clear;
