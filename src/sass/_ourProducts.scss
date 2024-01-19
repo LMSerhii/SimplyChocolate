@@ -1,24 +1,48 @@
 .products {
+  padding-bottom: 80px;
   &__title {
+    margin-bottom: 32px;
   }
   &__list {
   }
   &__item {
+    padding: 32px;
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    background-color: #fff;
+    text-align: center;
+
     &_img {
+      margin: 0 auto;
+      margin-bottom: 8px;
     }
     &_title {
       letter-spacing: -0.02em;
       text-transform: uppercase;
+      margin-bottom: 2px;
     }
     &_text {
       color: $dark-clear;
       font-size: 12px;
       line-height: 1.16;
       letter-spacing: -0.02em;
+      margin-bottom: 18px;
     }
     &_price {
+      padding: 8px 20px;
+      max-width: 100px;
       font-weight: 600;
+      border-radius: 100px;
+      border: 1px solid rgba(17, 17, 17, 0.1);
+      background-color: #fafafa;
+      margin: 0 auto;
+
+      &_text {
+      }
     }
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
   }
   &__link {
   }

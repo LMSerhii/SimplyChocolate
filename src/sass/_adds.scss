@@ -3,11 +3,15 @@
   &__title {
     margin-bottom: 32px;
   }
+
   &__list {
   }
+
   &__item {
+    position: relative;
     padding: 28px;
     border-radius: 15px;
+    color: $white;
   }
 
   &__item:not(:last-child) {
@@ -20,6 +24,7 @@
 
   &__item:nth-child(2n + 2) {
     border: 1px solid #fd9222;
+    color: $dark;
   }
 
   &__item:nth-child(4n + 3) {
@@ -27,9 +32,22 @@
   }
 
   &__link {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 24px;
+    height: 24px;
+    border: 1px solid $orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__item_icon {
+    width: 30px;
+    height: 7px;
+    stroke: $orange;
   }
 
   &__item_img {
@@ -38,13 +56,10 @@
   }
 
   &__item_text {
-    color: #fff;
     font-size: 14px;
     font-weight: 600;
     line-height: 1.28;
     letter-spacing: -0.02em;
     text-transform: uppercase;
   }
-
-
 }

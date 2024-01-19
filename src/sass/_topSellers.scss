@@ -1,17 +1,26 @@
 .sellers {
   &__title {
+    margin-bottom: 32px;
   }
 
   &__list {
   }
   &__item {
+    padding-bottom: 24px;
+    border-radius: 0px 0px 15px 15px;
+    border-right: 1px solid rgba(17, 17, 17, 0.1);
+    border-bottom: 1px solid rgba(17, 17, 17, 0.1);
+    border-left: 1px solid rgba(17, 17, 17, 0.1);
     &_img {
+      margin-bottom: 24px;
     }
     &_title {
       letter-spacing: -0.02em;
       text-transform: uppercase;
+      text-align: center;
     }
   }
+
   &__link {
   }
 }

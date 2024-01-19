@@ -1,16 +1,27 @@
 .howitsmade {
+  padding-bottom: 80px;
   &__title {
+    margin-bottom: 32px;
   }
 
   &__box {
     &__leftside {
+      width: 335px;
+      height: 500px;
+      margin-bottom: 20px;
       img {
       }
     }
     &__info {
-      h3 {
+      padding: 20px 14px;
+      .subtitle {
+        margin-bottom: 20px;
       }
       li {
+        padding-left: 16px;
+      }
+      li:not(:last-child) {
+        margin-bottom: 18px;
       }
     }
   }
