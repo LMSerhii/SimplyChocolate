@@ -5,13 +5,39 @@
     </h2>
     <div class="howitsmade__box">
       <div class="howitsmade__box__leftside">
-        <img
-          src="./images/made/image-desc.png"
-          alt="how it's made video"
-          width="600"
-          height="400"
-          loading="lazy"
-        />
+        <picture>
+          <!-- Desktop screen -->
+          <source
+            media="(min-width: 1200px)"
+            srcset="
+              ./images/made/image-desc.png    1x,
+              ./images/made/image-desc@2x.png 2x
+            "
+          />
+          <!-- Tablet screen -->
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/made/image-tab.png    1x,
+              ./images/made/image-tab@2x.png 2x
+            "
+          />
+          <!-- Mobile screen -->
+          <source
+            media="(max-width: 767px)"
+            srcset="
+              ./images/made/image-mob.png    1x,
+              ./images/made/image-mob@2x.png 2x
+            "
+          />
+          <img
+            src="./images/made/image-mob.png"
+            alt="how it's made"
+            width="600"
+            height="400"
+            loading="lazy"
+          />
+        </picture>
       </div>
       <div class="howitsmade__box__info">
         <h3 class="subtitle">

@@ -9,7 +9,11 @@
   &__container {
     border-radius: 30px;
     background-color: rgba(17, 17, 17, 0.7);
-    background-image: url('../images/hero/chocolate_main_mob.jpg');
+    background-image: linear-gradient(
+        rgba(17, 17, 17, 0.4),
+        rgba(17, 17, 17, 0.4)
+      ),
+      url('../images/hero/chocolate_main_mob.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -21,17 +25,69 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     &__container {
-      background-image: url('../images/hero/chocolate_main_mob@2x.jpg');
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url('../images/hero/chocolate_main_mob@2x.jpg');
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__container {
+      border-radius: 30px;
+      background-color: rgba(17, 17, 17, 0.7);
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url('../images/hero/chocolate_main_tab.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 20px;
+      padding-top: 395px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      &__container {
+        background-image: linear-gradient(
+            rgba(17, 17, 17, 0.4),
+            rgba(17, 17, 17, 0.4)
+          ),
+          url('../images/hero/chocolate_main_tab@2x.jpg');
+      }
     }
   }
 
   @media screen and (min-width: 1200px) {
     &__container {
-      padding: 40px;
-      padding-top: 381px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      border-radius: 30px;
+      background-color: rgba(17, 17, 17, 0.7);
+      background-image: linear-gradient(
+          rgba(17, 17, 17, 0.4),
+          rgba(17, 17, 17, 0.4)
+        ),
+        url('../images/hero/chocolate_main_desc.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 20px;
+      padding-top: 395px;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      &__container {
+        background-image: linear-gradient(
+            rgba(17, 17, 17, 0.4),
+            rgba(17, 17, 17, 0.4)
+          ),
+          url('../images/hero/chocolate_main_desc@2x.jpg');
+      }
     }
   }
 
