@@ -1,4 +1,5 @@
 .sellers {
+  padding-bottom: 80px;
   &__title {
     margin-bottom: 32px;
   }
@@ -11,6 +12,7 @@
     border-right: 1px solid rgba(17, 17, 17, 0.1);
     border-bottom: 1px solid rgba(17, 17, 17, 0.1);
     border-left: 1px solid rgba(17, 17, 17, 0.1);
+
     &_img {
       margin-bottom: 24px;
     }
@@ -19,6 +21,10 @@
       text-transform: uppercase;
       text-align: center;
     }
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   &__link {
