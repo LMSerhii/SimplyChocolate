@@ -1,6 +1,11 @@
 .reviews {
   padding-bottom: 80px;
   &__title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
     margin-bottom: 74px;
   }
 
@@ -27,6 +32,9 @@
     }
 
     &_title {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.33;
       text-align: center;
       margin-bottom: 24px;
     }
@@ -50,8 +58,10 @@
   }
 
   &__btn {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: normal;
     font-weight: 600;
+
     padding: 12px 28px;
     border-radius: 100px;
     border: 1px solid #fd9222;

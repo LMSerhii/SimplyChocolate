@@ -1,43 +1,69 @@
 .footer {
   background-color: $violet;
   color: $white;
+  padding: 32px 0;
 
   &__top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     &_text {
-      font-size: 28px;
+      font-size: 24px;
       font-weight: 500;
-      line-height: 1.21;
+      line-height: 1.17;
       letter-spacing: -0.02em;
     }
     &__social {
       &__title {
-        text-align: center;
+        font-size: 14px;
         font-weight: 500;
         line-height: 1.28;
+        margin-bottom: 14px;
       }
       &__list {
+        display: flex;
+        align-items: center;
+        gap: 14px;
       }
 
       &__item {
       }
 
       &__link {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
       }
 
       &__icon {
+        width: 24px;
+        height: 24px;
+        fill: #ffffff;
       }
     }
 
     &__address {
       &__title {
+        font-size: 14px;
         font-weight: 500;
         line-height: 1.28;
+        margin-bottom: 14px;
       }
       &__list {
       }
       &__item {
       }
+      &__item:not(:last-child) {
+        margin-bottom: 4px;
+      }
       &__link {
+        font-size: 14px;
         line-height: 1.28;
         letter-spacing: -0.02em;
       }
@@ -45,19 +71,34 @@
   }
 
   &__bottom {
+    padding-top: 32px;
     &__list {
+      margin-bottom: 32px;
     }
     &__item {
     }
+    &__item:not(:last-child) {
+      margin-bottom: 18px;
+    }
     &__link {
+      font-size: 14px;
       font-weight: 500;
       line-height: 1.14;
       letter-spacing: -0.02em;
     }
+
     &__form {
       &__label {
       }
       &__input {
+        padding: 14px 14px;
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 14px;
+        line-height: normal;
+        letter-spacing: -0.02em;
+        border-radius: 30px;
+        border: 1.5px solid rgba(255, 255, 255, 0.15);
+        background-color: transparent;
       }
 
       &__input::placeholder {
@@ -67,7 +108,15 @@
       }
 
       &__btn {
+        padding: 14px 26px;
+        color: #fff;
+        font-size: 14px;
         font-weight: 600;
+        line-height: normal;
+        border-radius: 100px;
+        background: #fd9222;
+        border: none;
+        margin-left: 8px;
       }
     }
   }
