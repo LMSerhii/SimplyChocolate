@@ -17,7 +17,6 @@
     position: relative;
     padding: 28px;
     border-radius: 15px;
-    color: $white;
   }
 
   &__item:not(:last-child) {
@@ -28,9 +27,23 @@
     background-color: #fd9222;
   }
 
+  &__item:nth-child(2n + 1) {
+    color: $light;
+    stroke: $light;
+
+    .adds__link {
+      border: 1px solid $light;
+    }
+  }
+
   &__item:nth-child(2n + 2) {
     border: 1px solid #fd9222;
     color: $dark;
+    stroke: $orange;
+
+    .adds__link {
+      border: 1px solid $orange;
+    }
   }
 
   &__item:nth-child(4n + 3) {
@@ -43,7 +56,7 @@
     right: 14px;
     width: 24px;
     height: 24px;
-    border: 1px solid $orange;
+
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -53,7 +66,6 @@
   &__item_icon {
     width: 30px;
     height: 7px;
-    stroke: $orange;
   }
 
   &__item_img {
