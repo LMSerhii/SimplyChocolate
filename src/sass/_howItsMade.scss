@@ -14,11 +14,29 @@
       width: 335px;
       height: 500px;
       margin-bottom: 20px;
+
       img {
       }
     }
     &__info {
       padding: 20px 14px;
+
+      &__text {
+        position: relative;
+      }
+
+      &__text::before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        background-color: #4c4c4c;
+        border: 1px solid #eceded;
+        border-radius: 100%;
+      }
+
       .subtitle {
         font-size: 18px;
         font-weight: 600;
