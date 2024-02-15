@@ -1,0 +1,2 @@
+(()=>{const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-menu-open"),n=document.querySelector(".js-close-menu"),i=()=>{const n="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!n),e.classList.toggle("is-open")};t.addEventListener("click",i),n.addEventListener("click",i),window.matchMedia("(min-width: 768px)").addEventListener("change",(n=>{n.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1))}))})();
+//# sourceMappingURL=index.6a4869fa.js.map
