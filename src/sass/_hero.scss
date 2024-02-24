@@ -116,14 +116,31 @@
         border-radius: 100px;
         border: none;
         padding: 12px 26px;
-      }
 
-      .btn.accent {
-        background-color: $orange;
-      }
-      .btn.ligth {
-        background-color: transparent;
-        border: 1px solid #fff;
+        &.accent {
+          background-color: $orange;
+
+          transition: background-color $animation, color $animation;
+        }
+        &.accent:hover,
+        &.accent:focus {
+          background-color: $beige;
+          color: $orange;
+        }
+
+        &.ligth {
+          background-color: transparent;
+          border: 1px solid #fff;
+
+          transition: background-color $animation, color $animation;
+        }
+
+        &.ligth:focus,
+        &.ligth:hover {
+          // border-color: $orange;
+          color: $orange;
+          background-color: $beige;
+        }
       }
     }
   }
@@ -132,16 +149,20 @@
     display: flex;
     align-items: center;
     gap: 12px;
+    transition: color $animation;
+
     &__text {
       font-size: 12px;
       font-weight: 500;
       line-height: 1.16;
       letter-spacing: -0.03em;
+      transition: color $animation;
 
       @media screen and (min-width: 1200px) {
         font-size: 14px;
       }
     }
+
     .scroll__link {
       display: flex;
       align-items: center;
@@ -150,9 +171,27 @@
       height: 28px;
       background-color: #fff;
       border-radius: 50%;
+
+      transition: background-color $animation;
+
       .scroll__icon {
         fill: $orange;
+
+        transition: fill $animation;
       }
+    }
+  }
+
+  .scroll:hover,
+  .scroll:focus {
+    color: $orange;
+
+    .scroll__icon {
+      fill: $white;
+    }
+
+    .scroll__link {
+      background-color: $orange;
     }
   }
 }
