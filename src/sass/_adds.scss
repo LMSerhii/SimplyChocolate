@@ -17,6 +17,17 @@
     position: relative;
     padding: 28px;
     border-radius: 15px;
+
+    .adds__link:hover,
+    .adds__link:focus {
+      .adds__item_icon {
+        transform: rotate(90deg);
+      }
+    }
+
+    &_icon {
+      transition: transform $animation;
+    }
   }
 
   &__item:not(:last-child) {
