@@ -65,5 +65,13 @@
     padding: 12px 28px;
     border-radius: 100px;
     border: 1px solid #fd9222;
+
+    transition: background-color $animation, color $animation;
+  }
+
+  &__btn:focus,
+  &__btn:hover {
+    background-color: $orange;
+    color: $white;
   }
 }
