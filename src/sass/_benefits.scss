@@ -22,7 +22,15 @@
     }
     &_icon {
       fill: #fd9222;
+
+      transition: transform $animation;
     }
+
+    &_icon:hover,
+    &_icon:focus {
+      transform: scale(-1, 1);
+    }
+
     &_title {
       color: $white;
       line-height: normal;
