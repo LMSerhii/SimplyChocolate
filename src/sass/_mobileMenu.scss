@@ -1,72 +1,122 @@
 .menu-container {
   position: fixed;
-  //   max-width: 220px;
-  width: 100vw;
-  height: 100vh;
-  background-color: #1e1823;
-  padding: 20px;
-  padding-top: 136px;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  padding-top: 136px;
+  background-color: #1e1823;
   z-index: 999;
 
   transform: translateX(100%);
-  //   transition: transform $animation;
-}
+  transition: transform 250ms ease-in-out;
 
-.menu-container.is-open {
-  transform: translateX(0);
-}
+  .menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    min-height: 28px;
+    min-width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.burgerMenu__btn {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-}
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  }
 
-.burgerMenu__closeIcon {
-  stroke: #fff;
-}
+  @media only screen and (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+  }
 
-.burgerMenu__list {
-}
+  .menu-toggle:hover,
+  .menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
 
-.burgerMenu__item {
-  color: #fff;
-}
+    .menu-close-icon {
+      stroke: $orange;
+      transform: rotate(180deg);
+    }
+  }
 
-.burgerMenu__item:hover,
-.burgerMenu__item:focus {
-  color: #fd9222;
-}
+  &.is-open {
+    transform: translateX(0);
+  }
 
-.burgerMenu__item:not(:last-child) {
-  margin-bottom: 24px;
-}
-.burgerMenu__link {
-}
-.burgerMenu__socialList {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-}
-.burgerMenu__socialItem {
-}
-.burgerMenu__socialLink {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 8px;
-  width: 40px;
-  height: 40px;
-}
-.burgerMenu__socialIcon {
-  fill: #fff;
+  .mobile-menu {
+    margin-bottom: auto;
+  }
+
+  .mobile-menu-item:not(:last-child) {
+    // margin-bottom: 24px;
+  }
+
+  .mobile-menu-link {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: $white;
+    padding: 12px 0;
+
+    transition: color $animation, transform $animation;
+  }
+
+  /* For mobile && tablet screen */
+  .mobile-menu-link:active {
+    color: $orange;
+  }
+
+  @media (hover: hover) {
+    .mobile-menu-link:hover,
+    .mobile-menu-link:focus {
+      color: $orange;
+      transform: scale(0.98);
+    }
+  }
+
+  .mobile-menu-socials {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    .socials-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 40px;
+      height: 40px;
+      fill: $white;
+
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+
+      transition: fill $animation, transform $animation;
+    }
+
+    .socials-link:hover,
+    .socials-link:focus {
+      fill: $orange;
+      border-color: rgba(253, 146, 34, 0.1);
+      transform: scale(1.2);
+    }
+  }
+
+  .menu-close-icon {
+    stroke: $white;
+
+    transition: stroke $animation, transform $animation;
+  }
 }
